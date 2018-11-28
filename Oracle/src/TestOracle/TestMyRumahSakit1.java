@@ -13,8 +13,9 @@ import model_RS.RumahSakit;
  * @author admin
  */
 public class TestMyRumahSakit1 {
+
     public static void main(String[] args) {
-    RumahSakit rs = new RumahSakit("Panti Rapih", "Yogyakarta");
+        RumahSakit rs = new RumahSakit("Panti Rapih", "Yogyakarta");
         Dokter dr1 = new Dokter("001", "Puspaningtyas");
         Dokter dr2 = new Dokter("002", "Budi");
 

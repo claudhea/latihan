@@ -34,7 +34,7 @@ public class TestOracle1 {
             //step4 execute query  
             ResultSet rs = stmt.executeQuery("SELECT * FROM DOKTER");
             while (rs.next()) {
-                System.out.println(rs.getInt(1) + "  " + rs.getString(2));
+                System.out.println(rs.getString(1) + "  " + rs.getString(2));
             }
 
             //step5 close the connection object  

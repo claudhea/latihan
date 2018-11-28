@@ -19,7 +19,7 @@ import java.util.logging.Logger;
  */
 public class TestOracle1 {
 
-    public static void main(String[] args) throws SQLException {
+    public static void main(String[] args){
         try {
             //step1 load the driver class  
             Class.forName("oracle.jdbc.driver.OracleDriver");
@@ -32,9 +32,9 @@ public class TestOracle1 {
             Statement stmt = con.createStatement();
 
             //step4 execute query  
-            ResultSet rs = stmt.executeQuery("SELECT E.first_name, E.last_name FROM MHS175314110.EMPLOYEES E");
+            ResultSet rs = stmt.executeQuery("SELECT * FROM dokter");
             while (rs.next()) {
-                System.out.println(rs.getInt(1) + "  " + rs.getString(2) + "  " + rs.getString(3));
+                System.out.println(rs.getInt(1) + "  " + rs.getString(2));
             }
 
             //step5 close the connection object  

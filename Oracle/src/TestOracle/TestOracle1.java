@@ -39,9 +39,7 @@ public class TestOracle1 {
 
             //step5 close the connection object  
             con.close();
-        } catch (ClassNotFoundException ex) {
-            Logger.getLogger(TestOracle1.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (SQLException ex) {
+        } catch (ClassNotFoundException | SQLException ex) {
             Logger.getLogger(TestOracle1.class.getName()).log(Level.SEVERE, null, ex);
         }
     }

@@ -28,10 +28,10 @@ public class TestOracle2 {
             Statement stmt = con.createStatement();
             //step4 execute query
             ResultSet rs = stmt.executeQuery(
-                    "select E.last_name, E.first_name, E.employee_id "
+                    "select E.employee_id, E.last_name, E.first_name "
                     + "from employees E");
             while (rs.next()) {
-                System.out.println(rs.getString(1) + "\t"
+                System.out.println(rs.getString(1) + " "
                         + rs.getString(2) + "\t"
                         + rs.getString(3));
             }

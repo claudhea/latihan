@@ -32,7 +32,7 @@ public class TestOracle1 {
             Statement stmt = con.createStatement();
 
             //step4 execute query  
-            ResultSet rs = stmt.executeQuery("SELECT * FROM dokter");
+            ResultSet rs = stmt.executeQuery("SELECT * FROM DOKTER");
             while (rs.next()) {
                 System.out.println(rs.getInt(1) + "  " + rs.getString(2));
             }

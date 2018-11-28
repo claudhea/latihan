@@ -74,6 +74,7 @@ public class MyDokterDialog extends JDialog {
      * Fungsi untuk memanggil dialog tambah Dokter
      */
     public void tambahDokter() {
+        // pasing parameter
         TambahDokterDialog tambahDokter = new TambahDokterDialog(this, rs);
         tambahDokter.setVisible(true);
     }
@@ -82,6 +83,6 @@ public class MyDokterDialog extends JDialog {
      * Fungsi untuk merefresh isi tabel dokter
      */
     public void refreshTabelDokter() {
-
+        //apdate 
     }
 }

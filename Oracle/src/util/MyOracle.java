@@ -44,6 +44,7 @@ public class MyOracle {
             String connString = "jdbc:oracle:thin:@" + ipAddress + ":" + port + ":" + sid;
             System.out.println(connString);
             //step2 create  the connection object
+            System.out.println(userName + " "+password+" ");
             con = DriverManager.getConnection(connString, userName, password);
         } catch (ClassNotFoundException ex) {
             Logger.getLogger(MyOracle.class.getName()).log(Level.SEVERE, null, ex);

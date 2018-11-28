@@ -35,7 +35,7 @@ public class TestDepartment2 {
         
         for (int i = 0; i < dept1.getManagers().size(); i++) {
             Employee man = dept1.getManagers().get(i);
-            System.out.println("Manager = "+man.toString());
+            System.out.println("Manager1 = "+man.toString());
         }
    }
 }

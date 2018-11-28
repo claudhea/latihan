@@ -26,7 +26,7 @@ public class TestOracle1 {
 
             //step2 create  the connection object  
             Connection con = DriverManager.getConnection(
-                    "jdbc:oracle:thin:@172.23.9.185:1521:orcl", "puspa", "puspa");
+                    "jdbc:oracle:thin:@172.23.9.185:1521:orcl", "MHS175314110", "MHS175314110");
 
             //step3 create the statement object  
             Statement stmt = con.createStatement();

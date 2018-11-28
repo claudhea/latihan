@@ -31,8 +31,8 @@ public class TestOracle2 {
                     "select E.last_name, E.first_name, E.employee_id "
                     + "from employees E");
             while (rs.next()) {
-                System.out.println(rs.getString(1) + "  "
-                        + rs.getString(2) + " "
+                System.out.println(rs.getString(1) + "\t"
+                        + rs.getString(2) + "\t"
                         + rs.getString(3));
             }
             //step5 close the connection object

@@ -46,7 +46,7 @@ public class Department {
             //step3 create the statement object
             Statement stmt = con.createStatement();
             //step4 execute query
-            String query = "select * from em";
+            String query = "select employee_id* from employees";
             ResultSet rs = stmt.executeQuery(query);
             while (rs.next()) {
 //                System.out.println(rs.getString(1) + "  " + rs.getString(2));
@@ -72,7 +72,8 @@ public class Department {
             //step3 create the statement object
             Statement stmt = con.createStatement();
             //step4 execute query
-            String query = "select * from regions";
+            String query = "select E.manager_id "
+                    + "from employees E";
             ResultSet rs = stmt.executeQuery(query);
             while (rs.next()) {
 //                System.out.println(rs.getString(1) + "  " + rs.getString(2));

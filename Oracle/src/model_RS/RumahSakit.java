@@ -20,7 +20,8 @@ import util.MyOracle;
  * @author admin
  */
 public class RumahSakit {
-   private String nama;
+
+    private String nama;
     private String alamat;
 
     private ArrayList<Dokter> daftarDokter = new ArrayList<Dokter>();
@@ -71,8 +72,12 @@ public class RumahSakit {
                             + "VALUES ('" + temp.getIdDokter() + "','"
                             + temp.getNama() + "')";
                     // eksekusi query
-                    statement.execute(query);
-                    con.commit();
+                    try {
+                        statement.execute(query);
+                        con.commit();
+                    } catch (Exception ex) {
+                        System.out.println("Perintah insert gagal");
+                    }
                 }
             }
             // tutup koneksi

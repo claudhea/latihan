@@ -16,6 +16,10 @@ public class Employee {
     private String last_name;
     private int manager_id;
 
+    Employee(int aInt, String string) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
+    }
+
     /**
      * @return the first_name
      */
